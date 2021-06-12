@@ -7,7 +7,8 @@ Projet de démarrage pour le [TP - Mise en oeuvre des patterns sur des Geometry]
 ## Principes
 
 * La branche par défaut ("initial") permet de récupérer un projet maven pour commencer à travailler
-* Les branches 0.1, 0.2, etc. correspondront aux réponses pour chaque question du TP
+* La branche master correspond aux travaux en cours.
+* Les branches 0.1, 0.2, etc. correspondent aux réponses pour chaque question du TP
 * junit et mockito permettent l'écriture de tests unitaires
 * La commande maven suivante permet la construction, l'exécution des tests et la génération d'un rapport de couverture :
 
