@@ -34,4 +34,9 @@ public class Point implements Geometry{
         double nwY = this.coordinate.getY() + yt;
         this.coordinate = new Coordinate(nwX, nwY);
     }
+
+    @Override
+	public Point clone() {
+		return new Point (new Coordinate(this.coordinate.getX(),this.coordinate.getY()));
+	}
 }
