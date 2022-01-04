@@ -23,5 +23,8 @@ public class Coordinate {
         return y;
     }
 
+    public boolean isEmpty(){
+        return Double.isNaN(x) || Double.isNaN(y);
+    }
 
 }

@@ -29,6 +29,8 @@ public class LineString implements Geometry{
         return points.get(p);
     }
 
+    public boolean isEmpty() {
+        return getNumPoints() == 0;
+    }
 
-    
 }
