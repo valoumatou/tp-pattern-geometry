@@ -17,12 +17,12 @@ public class LineStringTest {
 		return new Point(new Coordinate(3.0, 4.0));
 	}
 
-	@Test
-	public void testDefaultConstructor() {
-
-		LineString ls = new LineString();
-		Assert.assertEquals(1, ls.getNumPoints());
-	}
+    @Test
+    public void testDefaultConstructor() {
+        LineString line = new LineString();
+        Assert.assertEquals(0, line.getNumPoints());
+        Assert.assertTrue(line.isEmpty());
+    }
 
 	@Test
 	public void testConstructor() {

@@ -1,7 +1,7 @@
 package org.acme.geometry;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.ArrayList;
 
 public class LineString implements Geometry{
 	
@@ -9,28 +9,35 @@ public class LineString implements Geometry{
 
     public LineString() {
         this.points = new ArrayList<Point>();
-        this.points.add(new Point());
     }
 
     public LineString(List<Point> points) {
         this.points = points;
     }
     
+    public int getNumPoints(){
+        return points.size();
+    }
+
+    public Point getPointN(int n){
+        return points.get(n);
+    }
+    
     @Override
     public String getType() {
         return "LineString";
     }
-
-        public int getNumPoints(){
-        return points.size();
-    }
-
-    public Point getPointN(int p){
-        return points.get(p);
-    }
-
+    
+    @Override
     public boolean isEmpty() {
-        return getNumPoints() == 0;
+        return this.points.isEmpty();
+    }
+    
+    @Override
+    public void translate(double xt, double yt) {
+        for (Point point : points){
+            point.translate(xt, yt);
+        };
     }
 
 }

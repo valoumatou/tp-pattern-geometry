@@ -19,9 +19,19 @@ public class Point implements Geometry{
     }
 
     @Override
-
     public String getType() {
         return "Point";
     }
 
+    @Override
+    public boolean isEmpty() {
+        return Double.isNaN(coordinate.getX());
+    }
+
+    @Override
+    public void translate(double xt, double yt) {
+        double nwX = this.coordinate.getX() + xt;
+        double nwY = this.coordinate.getY() + yt;
+        this.coordinate = new Coordinate(nwX, nwY);
+    }
 }
