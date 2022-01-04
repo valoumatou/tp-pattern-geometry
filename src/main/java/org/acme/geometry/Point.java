@@ -2,6 +2,8 @@ package org.acme.geometry;
 
 public class Point implements Geometry{
 
+    public static final String Type = "Point";
+    
     private Coordinate coordinate;
 
     public Point() {

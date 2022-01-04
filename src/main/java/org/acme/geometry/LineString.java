@@ -10,13 +10,14 @@ public class LineString implements Geometry{
         this.points = null;
     }
 
+    /*
     public LineString(List<Point> points) {
         assert (points !=) null);
         assert ! hasEmptyPoints(points);
         this.points = points;
     }
 
-/*
+
     private boolean hasEmptyPoints(List<Point> points) {
         for (Point point : points) {
             if (point.isEmpty()) {
@@ -24,7 +25,7 @@ public class LineString implements Geometry{
             }
         }
     }
-*/
+    */
 
     public int getNumPoints(){
         return points.size();
@@ -35,7 +36,6 @@ public class LineString implements Geometry{
     }
 
     @Override
-
     public String getType() {
         return "LineString";
     }

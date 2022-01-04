@@ -3,15 +3,18 @@ package org.acme.geometry;
 public class Coordinate {
 
 
-    private double x;
-    private double y;
+    private double x = 0.0;
+    private double y = 0.0;
 
-    public void Coordinate() {
-        double x = 0.0;
-        double y = 0.0;
+    public Coordinate() {
+        this.x = 0.0;
+        this.y = 0.0;
     }
 
-    public void Coordinate(double x, double y);
+    public Coordinate(double x, double y) {
+        this.x = x;
+        this.y = y;
+    }
 
     public double getX(){
         return x;
